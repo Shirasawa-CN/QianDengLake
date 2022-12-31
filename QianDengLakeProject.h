@@ -1,0 +1,14 @@
+//
+// Created by shirasawa on 2022/12/31.
+//
+
+#ifndef QIANDENGLAKE_QIANDENGLAKEPROJECT_H
+#define QIANDENGLAKE_QIANDENGLAKEPROJECT_H
+
+
+class QianDengLakeProject {
+
+};
+
+
+#endif //QIANDENGLAKE_QIANDENGLAKEPROJECT_H

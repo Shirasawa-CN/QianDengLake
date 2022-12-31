@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file>archive-cog.svg</file>
+        <file>arrow-left-drop-circle.svg</file>
+        <file>brightness-2.svg</file>
+        <file>brightness-5.svg</file>
+        <file>broom.svg</file>
+        <file>text-box-search-outline.svg</file>
+        <file>update.svg</file>
+        <file>wrench-outline.svg</file>
+        <file>wrench.svg</file>
+    </qresource>
+</RCC>

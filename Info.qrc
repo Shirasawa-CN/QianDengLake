@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Project Info">
+        <file>LICENSE</file>
+        <file>Change Log.txt</file>
+    </qresource>
+</RCC>
