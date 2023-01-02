@@ -18,7 +18,7 @@ set(ICONS Icons/Icons.qrc)
 set(INFO Info.qrc)
 set(THANKS thanks.h thanks.cpp thanks.ui)
 set(CHANGLOG changlog.h changlog.cpp changlog.ui)
-set(QIANDENGLAKEPROJECT QianDengLakeProject.h QianDengLakeProject.cpp)
+set(QIANDENGLAKEPROJECT QianDengLakeProject/QianDengLakeProject.h QianDengLakeProject/QianDengLakeProject.cpp)
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
