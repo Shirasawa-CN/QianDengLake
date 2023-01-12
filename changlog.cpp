@@ -2,9 +2,8 @@
 #include "ui_changlog.h"
 
 ChangLog::ChangLog(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::ChangLog)
-{
+        QWidget(parent),
+        ui(new Ui::ChangLog) {
     ui->setupUi(this);
     QFile file(":/Project Info/Change Log.txt");
     file.open(QIODevice::ReadOnly);
@@ -15,7 +14,6 @@ ChangLog::ChangLog(QWidget *parent) :
     setWindowTitle("Chang Log");
 }
 
-ChangLog::~ChangLog()
-{
+ChangLog::~ChangLog() {
     delete ui;
 }

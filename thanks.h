@@ -5,15 +5,15 @@
 #include <QFile>
 
 namespace Ui {
-class Thanks;
+    class Thanks;
 }
 
-class Thanks : public QWidget
-{
-    Q_OBJECT
+class Thanks : public QWidget {
+Q_OBJECT
 
 public:
     explicit Thanks(QWidget *parent = nullptr);
+
     ~Thanks();
 
 private:

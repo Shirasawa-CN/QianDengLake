@@ -1,5 +1,14 @@
-//
-// Created by shirasawa on 2022/12/31.
-//
-
 #include "QianDengLakeProject.h"
+#include "QianDengConfig.h"
+
+bool QianDengLakeProject::readProjectInfo() {
+}
+
+bool QianDengLakeProject::createProject() {
+}
+
+bool QianDengLakeProject::writeInitProjectInfo() {
+}
+
+bool QianDengLakeProject::changeProjectInfo() {
+}

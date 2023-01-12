@@ -1,371 +1,376 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>800</width>
-    <height>600</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>MainWindow</string>
-  </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QTextEdit" name="textEdit">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>-1</y>
-      <width>800</width>
-      <height>591</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuFile">
-    <property name="title">
-     <string>&amp;File</string>
-    </property>
-    <addaction name="actionNew_Project"/>
-    <addaction name="actionNew_File"/>
-    <addaction name="actionOpen_Project"/>
-    <addaction name="actionOpen_File"/>
-    <addaction name="actionRecent_Project"/>
-    <addaction name="actionRecent_File"/>
-    <addaction name="actionSessions"/>
-    <addaction name="separator"/>
-    <addaction name="actionSave_Projcet"/>
-    <addaction name="actionSave"/>
-    <addaction name="actionSave_File_As"/>
-    <addaction name="actionSave_All"/>
-    <addaction name="separator"/>
-    <addaction name="actionClose_Project"/>
-    <addaction name="actionClose_File"/>
-    <addaction name="separator"/>
-    <addaction name="actionPrint_s"/>
-    <addaction name="separator"/>
-    <addaction name="actionExit_s"/>
-   </widget>
-   <widget class="QMenu" name="menuEdit">
-    <property name="title">
-     <string>&amp;Edit</string>
-    </property>
-    <addaction name="actionUndo_Change"/>
-    <addaction name="actionRedo"/>
-    <addaction name="separator"/>
-    <addaction name="actionCopy"/>
-    <addaction name="actionPaste"/>
-    <addaction name="actionDelete"/>
-    <addaction name="actionRemove_File"/>
-    <addaction name="separator"/>
-    <addaction name="actionSelect_All"/>
-    <addaction name="separator"/>
-    <addaction name="actionFind_Replace"/>
-    <addaction name="separator"/>
-    <addaction name="actionPrefences"/>
-   </widget>
-   <widget class="QMenu" name="menu_View">
-    <property name="title">
-     <string>&amp;View</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu_Build">
-    <property name="title">
-     <string>&amp;Build</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu_Analyze">
-    <property name="title">
-     <string>&amp;Analyze</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menuTools">
-    <property name="title">
-     <string>&amp;Tools</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu_Window">
-    <property name="title">
-     <string>&amp;Window</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menuHelp">
-    <property name="title">
-     <string>&amp;Help</string>
-    </property>
-    <addaction name="actionIndex_s"/>
-    <addaction name="actionCommunity"/>
-    <addaction name="separator"/>
-    <addaction name="separator"/>
-    <addaction name="actionAbout_QianDeng_Lake"/>
-    <addaction name="actionAbout_Plugins"/>
-    <addaction name="actionChange_Log"/>
-    <addaction name="actionThanks"/>
-   </widget>
-   <addaction name="menuFile"/>
-   <addaction name="menuEdit"/>
-   <addaction name="menu_View"/>
-   <addaction name="menu_Build"/>
-   <addaction name="menu_Analyze"/>
-   <addaction name="menuTools"/>
-   <addaction name="menu_Window"/>
-   <addaction name="menuHelp"/>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
-  <widget class="QToolBar" name="toolBar">
-   <property name="windowTitle">
-    <string>toolBar</string>
-   </property>
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-   <addaction name="actionRun"/>
-   <addaction name="actionBuild"/>
-   <addaction name="actionRebuild"/>
-   <addaction name="actionClean"/>
-   <addaction name="actionFind_Replace_2"/>
-  </widget>
-  <action name="actionIndex">
-   <property name="text">
-    <string>Index</string>
-   </property>
-  </action>
-  <action name="actionAbout_QianDengLake">
-   <property name="text">
-    <string>About QianDengLake</string>
-   </property>
-  </action>
-  <action name="actionAbout_Plug_s">
-   <property name="text">
-    <string>About Plug(s)</string>
-   </property>
-  </action>
-  <action name="actionIndex_s">
-   <property name="text">
-    <string>Index</string>
-   </property>
-  </action>
-  <action name="actionCommunity">
-   <property name="text">
-    <string>Community</string>
-   </property>
-  </action>
-  <action name="actionAbout_QianDeng_Lake">
-   <property name="text">
-    <string>About QianDeng Lake</string>
-   </property>
-  </action>
-  <action name="actionAbout_Plugins">
-   <property name="text">
-    <string>About Plugins</string>
-   </property>
-  </action>
-  <action name="actionChange_Log">
-   <property name="text">
-    <string>Change Log</string>
-   </property>
-  </action>
-  <action name="actionNew_Project">
-   <property name="text">
-    <string>New Project...</string>
-   </property>
-  </action>
-  <action name="actionNew_File">
-   <property name="text">
-    <string>New File...</string>
-   </property>
-  </action>
-  <action name="actionOpen_Project">
-   <property name="text">
-    <string>Open Project</string>
-   </property>
-  </action>
-  <action name="actionOpen_File">
-   <property name="text">
-    <string>Open File</string>
-   </property>
-  </action>
-  <action name="actionRecent_Project">
-   <property name="text">
-    <string>Recent Project</string>
-   </property>
-  </action>
-  <action name="actionRecent_File">
-   <property name="text">
-    <string>Recent File</string>
-   </property>
-  </action>
-  <action name="actionSessions">
-   <property name="text">
-    <string>Sessions</string>
-   </property>
-  </action>
-  <action name="actionSave_Projcet">
-   <property name="text">
-    <string>Save Projcet</string>
-   </property>
-  </action>
-  <action name="actionSave_File_As">
-   <property name="text">
-    <string>Save File As ...</string>
-   </property>
-  </action>
-  <action name="actionSave_All">
-   <property name="text">
-    <string>Save All</string>
-   </property>
-  </action>
-  <action name="actionClose_File">
-   <property name="text">
-    <string>Close File</string>
-   </property>
-  </action>
-  <action name="actionClose_Project">
-   <property name="text">
-    <string>Close Project</string>
-   </property>
-  </action>
-  <action name="actionPrint">
-   <property name="text">
-    <string>Print</string>
-   </property>
-  </action>
-  <action name="actionExit">
-   <property name="text">
-    <string>Exit</string>
-   </property>
-  </action>
-  <action name="actionPrint_s">
-   <property name="text">
-    <string>Print</string>
-   </property>
-  </action>
-  <action name="actionUndo_Change">
-   <property name="text">
-    <string>Undo Change</string>
-   </property>
-  </action>
-  <action name="actionRedo">
-   <property name="text">
-    <string>Redo</string>
-   </property>
-  </action>
-  <action name="actionCopy">
-   <property name="text">
-    <string>Copy</string>
-   </property>
-  </action>
-  <action name="actionPaste">
-   <property name="text">
-    <string>Paste</string>
-   </property>
-  </action>
-  <action name="actionDelete">
-   <property name="text">
-    <string>Delete</string>
-   </property>
-  </action>
-  <action name="actionRemove_File">
-   <property name="text">
-    <string>Remove File</string>
-   </property>
-  </action>
-  <action name="actionSelect_All">
-   <property name="text">
-    <string>Select All</string>
-   </property>
-  </action>
-  <action name="actionFind_Replace">
-   <property name="text">
-    <string>Find/Replace</string>
-   </property>
-  </action>
-  <action name="actionPrefences">
-   <property name="text">
-    <string>Prefences</string>
-   </property>
-  </action>
-  <action name="actionExit_s">
-   <property name="text">
-    <string>Exit</string>
-   </property>
-  </action>
-  <action name="actionSave">
-   <property name="text">
-    <string>Save</string>
-   </property>
-  </action>
-  <action name="actionRun">
-   <property name="icon">
-    <iconset resource="Icons/Icons.qrc">
-     <normaloff>:/Icons/arrow-left-drop-circle.svg</normaloff>:/Icons/arrow-left-drop-circle.svg</iconset>
-   </property>
-   <property name="text">
-    <string>Run</string>
-   </property>
-  </action>
-  <action name="actionBuild">
-   <property name="icon">
-    <iconset resource="Icons/Icons.qrc">
-     <normaloff>:/Icons/wrench.svg</normaloff>:/Icons/wrench.svg</iconset>
-   </property>
-   <property name="text">
-    <string>Build</string>
-   </property>
-  </action>
-  <action name="actionRebuild">
-   <property name="icon">
-    <iconset resource="Icons/Icons.qrc">
-     <normaloff>:/Icons/archive-cog.svg</normaloff>:/Icons/archive-cog.svg</iconset>
-   </property>
-   <property name="text">
-    <string>Rebuild</string>
-   </property>
-  </action>
-  <action name="actionClean">
-   <property name="icon">
-    <iconset resource="Icons/Icons.qrc">
-     <normaloff>:/Icons/broom.svg</normaloff>:/Icons/broom.svg</iconset>
-   </property>
-   <property name="text">
-    <string>Clean</string>
-   </property>
-  </action>
-  <action name="actionFind_Replace_2">
-   <property name="icon">
-    <iconset resource="Icons/Icons.qrc">
-     <normaloff>:/Icons/text-box-search-outline.svg</normaloff>:/Icons/text-box-search-outline.svg</iconset>
-   </property>
-   <property name="text">
-    <string>Find/Replace...</string>
-   </property>
-  </action>
-  <action name="actionThanks">
-   <property name="text">
-    <string>Thanks</string>
-   </property>
-  </action>
- </widget>
- <resources>
-  <include location="Icons/Icons.qrc"/>
- </resources>
- <connections/>
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>600</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QTextEdit" name="textEdit">
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>-1</y>
+                        <width>800</width>
+                        <height>591</height>
+                    </rect>
+                </property>
+                <property name="autoFillBackground">
+                    <bool>false</bool>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>800</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <widget class="QMenu" name="menuFile">
+                <property name="title">
+                    <string>&amp;File</string>
+                </property>
+                <addaction name="actionNew_Project"/>
+                <addaction name="actionNew_File"/>
+                <addaction name="actionOpen_Project"/>
+                <addaction name="actionOpen_File"/>
+                <addaction name="actionRecent_Project"/>
+                <addaction name="actionRecent_File"/>
+                <addaction name="actionSessions"/>
+                <addaction name="separator"/>
+                <addaction name="actionSave_Projcet"/>
+                <addaction name="actionSave"/>
+                <addaction name="actionSave_File_As"/>
+                <addaction name="actionSave_All"/>
+                <addaction name="separator"/>
+                <addaction name="actionClose_Project"/>
+                <addaction name="actionClose_File"/>
+                <addaction name="separator"/>
+                <addaction name="actionPrint_s"/>
+                <addaction name="separator"/>
+                <addaction name="actionExit_s"/>
+            </widget>
+            <widget class="QMenu" name="menuEdit">
+                <property name="title">
+                    <string>&amp;Edit</string>
+                </property>
+                <addaction name="actionUndo_Change"/>
+                <addaction name="actionRedo"/>
+                <addaction name="separator"/>
+                <addaction name="actionCopy"/>
+                <addaction name="actionPaste"/>
+                <addaction name="actionDelete"/>
+                <addaction name="actionRemove_File"/>
+                <addaction name="separator"/>
+                <addaction name="actionSelect_All"/>
+                <addaction name="separator"/>
+                <addaction name="actionFind_Replace"/>
+                <addaction name="separator"/>
+                <addaction name="actionPrefences"/>
+            </widget>
+            <widget class="QMenu" name="menu_View">
+                <property name="title">
+                    <string>&amp;View</string>
+                </property>
+            </widget>
+            <widget class="QMenu" name="menu_Build">
+                <property name="title">
+                    <string>&amp;Build</string>
+                </property>
+            </widget>
+            <widget class="QMenu" name="menu_Analyze">
+                <property name="title">
+                    <string>&amp;Analyze</string>
+                </property>
+            </widget>
+            <widget class="QMenu" name="menuTools">
+                <property name="title">
+                    <string>&amp;Tools</string>
+                </property>
+            </widget>
+            <widget class="QMenu" name="menu_Window">
+                <property name="title">
+                    <string>&amp;Window</string>
+                </property>
+            </widget>
+            <widget class="QMenu" name="menuHelp">
+                <property name="title">
+                    <string>&amp;Help</string>
+                </property>
+                <addaction name="actionIndex_s"/>
+                <addaction name="actionCommunity"/>
+                <addaction name="separator"/>
+                <addaction name="separator"/>
+                <addaction name="actionAbout_QianDeng_Lake"/>
+                <addaction name="actionAbout_Plugins"/>
+                <addaction name="actionChange_Log"/>
+                <addaction name="actionThanks"/>
+            </widget>
+            <addaction name="menuFile"/>
+            <addaction name="menuEdit"/>
+            <addaction name="menu_View"/>
+            <addaction name="menu_Build"/>
+            <addaction name="menu_Analyze"/>
+            <addaction name="menuTools"/>
+            <addaction name="menu_Window"/>
+            <addaction name="menuHelp"/>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+        <widget class="QToolBar" name="toolBar">
+            <property name="windowTitle">
+                <string>toolBar</string>
+            </property>
+            <attribute name="toolBarArea">
+                <enum>TopToolBarArea</enum>
+            </attribute>
+            <attribute name="toolBarBreak">
+                <bool>false</bool>
+            </attribute>
+            <addaction name="actionRun"/>
+            <addaction name="actionBuild"/>
+            <addaction name="actionRebuild"/>
+            <addaction name="actionClean"/>
+            <addaction name="actionFind_Replace_2"/>
+        </widget>
+        <action name="actionIndex">
+            <property name="text">
+                <string>Index</string>
+            </property>
+        </action>
+        <action name="actionAbout_QianDengLake">
+            <property name="text">
+                <string>About QianDengLake</string>
+            </property>
+        </action>
+        <action name="actionAbout_Plug_s">
+            <property name="text">
+                <string>About Plug(s)</string>
+            </property>
+        </action>
+        <action name="actionIndex_s">
+            <property name="text">
+                <string>Index</string>
+            </property>
+        </action>
+        <action name="actionCommunity">
+            <property name="text">
+                <string>Community</string>
+            </property>
+        </action>
+        <action name="actionAbout_QianDeng_Lake">
+            <property name="text">
+                <string>About QianDeng Lake</string>
+            </property>
+        </action>
+        <action name="actionAbout_Plugins">
+            <property name="text">
+                <string>About Plugins</string>
+            </property>
+        </action>
+        <action name="actionChange_Log">
+            <property name="text">
+                <string>Change Log</string>
+            </property>
+        </action>
+        <action name="actionNew_Project">
+            <property name="text">
+                <string>New Project...</string>
+            </property>
+        </action>
+        <action name="actionNew_File">
+            <property name="text">
+                <string>New File...</string>
+            </property>
+        </action>
+        <action name="actionOpen_Project">
+            <property name="text">
+                <string>Open Project</string>
+            </property>
+        </action>
+        <action name="actionOpen_File">
+            <property name="text">
+                <string>Open File</string>
+            </property>
+        </action>
+        <action name="actionRecent_Project">
+            <property name="text">
+                <string>Recent Project</string>
+            </property>
+        </action>
+        <action name="actionRecent_File">
+            <property name="text">
+                <string>Recent File</string>
+            </property>
+        </action>
+        <action name="actionSessions">
+            <property name="text">
+                <string>Sessions</string>
+            </property>
+        </action>
+        <action name="actionSave_Projcet">
+            <property name="text">
+                <string>Save Projcet</string>
+            </property>
+        </action>
+        <action name="actionSave_File_As">
+            <property name="text">
+                <string>Save File As ...</string>
+            </property>
+        </action>
+        <action name="actionSave_All">
+            <property name="text">
+                <string>Save All</string>
+            </property>
+        </action>
+        <action name="actionClose_File">
+            <property name="text">
+                <string>Close File</string>
+            </property>
+        </action>
+        <action name="actionClose_Project">
+            <property name="text">
+                <string>Close Project</string>
+            </property>
+        </action>
+        <action name="actionPrint">
+            <property name="text">
+                <string>Print</string>
+            </property>
+        </action>
+        <action name="actionExit">
+            <property name="text">
+                <string>Exit</string>
+            </property>
+        </action>
+        <action name="actionPrint_s">
+            <property name="text">
+                <string>Print</string>
+            </property>
+        </action>
+        <action name="actionUndo_Change">
+            <property name="text">
+                <string>Undo Change</string>
+            </property>
+        </action>
+        <action name="actionRedo">
+            <property name="text">
+                <string>Redo</string>
+            </property>
+        </action>
+        <action name="actionCopy">
+            <property name="text">
+                <string>Copy</string>
+            </property>
+        </action>
+        <action name="actionPaste">
+            <property name="text">
+                <string>Paste</string>
+            </property>
+        </action>
+        <action name="actionDelete">
+            <property name="text">
+                <string>Delete</string>
+            </property>
+        </action>
+        <action name="actionRemove_File">
+            <property name="text">
+                <string>Remove File</string>
+            </property>
+        </action>
+        <action name="actionSelect_All">
+            <property name="text">
+                <string>Select All</string>
+            </property>
+        </action>
+        <action name="actionFind_Replace">
+            <property name="text">
+                <string>Find/Replace</string>
+            </property>
+        </action>
+        <action name="actionPrefences">
+            <property name="text">
+                <string>Prefences</string>
+            </property>
+        </action>
+        <action name="actionExit_s">
+            <property name="text">
+                <string>Exit</string>
+            </property>
+        </action>
+        <action name="actionSave">
+            <property name="text">
+                <string>Save</string>
+            </property>
+        </action>
+        <action name="actionRun">
+            <property name="icon">
+                <iconset resource="Icons/Icons.qrc">
+                    <normaloff>:/Icons/arrow-left-drop-circle.svg</normaloff>:/Icons/arrow-left-drop-circle.svg
+                </iconset>
+            </property>
+            <property name="text">
+                <string>Run</string>
+            </property>
+        </action>
+        <action name="actionBuild">
+            <property name="icon">
+                <iconset resource="Icons/Icons.qrc">
+                    <normaloff>:/Icons/wrench.svg</normaloff>:/Icons/wrench.svg
+                </iconset>
+            </property>
+            <property name="text">
+                <string>Build</string>
+            </property>
+        </action>
+        <action name="actionRebuild">
+            <property name="icon">
+                <iconset resource="Icons/Icons.qrc">
+                    <normaloff>:/Icons/archive-cog.svg</normaloff>:/Icons/archive-cog.svg
+                </iconset>
+            </property>
+            <property name="text">
+                <string>Rebuild</string>
+            </property>
+        </action>
+        <action name="actionClean">
+            <property name="icon">
+                <iconset resource="Icons/Icons.qrc">
+                    <normaloff>:/Icons/broom.svg</normaloff>:/Icons/broom.svg
+                </iconset>
+            </property>
+            <property name="text">
+                <string>Clean</string>
+            </property>
+        </action>
+        <action name="actionFind_Replace_2">
+            <property name="icon">
+                <iconset resource="Icons/Icons.qrc">
+                    <normaloff>:/Icons/text-box-search-outline.svg</normaloff>:/Icons/text-box-search-outline.svg
+                </iconset>
+            </property>
+            <property name="text">
+                <string>Find/Replace...</string>
+            </property>
+        </action>
+        <action name="actionThanks">
+            <property name="text">
+                <string>Thanks</string>
+            </property>
+        </action>
+    </widget>
+    <resources>
+        <include location="Icons/Icons.qrc"/>
+    </resources>
+    <connections/>
 </ui>

@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AboutQianDengLake</class>
- <widget class="QWidget" name="AboutQianDengLake">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>500</width>
-    <height>400</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>Form</string>
-  </property>
-  <widget class="QPlainTextEdit" name="plainTextEdit">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>50</y>
-     <width>480</width>
-     <height>340</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Fira Code</family>
-    </font>
-   </property>
-   <property name="plainText">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>11</x>
-     <y>11</y>
-     <width>183</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>20</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>QianDeng Lake</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>30</y>
-     <width>81</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Version 0.0.1</string>
-   </property>
-  </widget>
- </widget>
- <resources/>
- <connections/>
+    <class>AboutQianDengLake</class>
+    <widget class="QWidget" name="AboutQianDengLake">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>500</width>
+                <height>400</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Form</string>
+        </property>
+        <widget class="QPlainTextEdit" name="plainTextEdit">
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>50</y>
+                    <width>480</width>
+                    <height>340</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <family>Fira Code</family>
+                </font>
+            </property>
+            <property name="plainText">
+                <string/>
+            </property>
+        </widget>
+        <widget class="QLabel" name="label">
+            <property name="geometry">
+                <rect>
+                    <x>11</x>
+                    <y>11</y>
+                    <width>183</width>
+                    <height>32</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>20</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string>QianDeng Lake</string>
+            </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+            <property name="geometry">
+                <rect>
+                    <x>200</x>
+                    <y>30</y>
+                    <width>81</width>
+                    <height>16</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Version 0.0.1</string>
+            </property>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
 </ui>

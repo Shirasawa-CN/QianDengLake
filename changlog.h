@@ -7,15 +7,15 @@
 #include <QFileDialog>
 
 namespace Ui {
-class ChangLog;
+    class ChangLog;
 }
 
-class ChangLog : public QWidget
-{
-    Q_OBJECT
+class ChangLog : public QWidget {
+Q_OBJECT
 
 public:
     explicit ChangLog(QWidget *parent = nullptr);
+
     ~ChangLog();
 
 private:

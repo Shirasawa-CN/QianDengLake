@@ -5,15 +5,15 @@
 #include <QFile>
 
 namespace Ui {
-class AboutQianDengLake;
+    class AboutQianDengLake;
 }
 
-class AboutQianDengLake : public QWidget
-{
-    Q_OBJECT
+class AboutQianDengLake : public QWidget {
+Q_OBJECT
 
 public:
     explicit AboutQianDengLake(QWidget *parent = nullptr);
+
     ~AboutQianDengLake();
 
 private:

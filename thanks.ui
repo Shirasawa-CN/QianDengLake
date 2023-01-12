@@ -30,12 +30,8 @@
    <property name="plainText">
     <string>I sincerely thank the following projects, organizations or individuals:
 
- sthlm58 / QtMaterialDesignIcons
-https://github.com/sthlm58/QtMaterialDesignIcons
-
- google / material-design-icons 
-https://github.com/google/material-design-icons
-</string>
+sthlm58 / QtMaterialDesignIcons
+https://github.com/sthlm58/QtMaterialDesignIcons</string>
    </property>
   </widget>
  </widget>

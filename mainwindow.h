@@ -13,32 +13,41 @@
 #include <QAction>
 #include <QLabel>
 #include <vector>
+#include <QFileInfo>
+#include <fstream>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
+class MainWindow : public QMainWindow {
+Q_OBJECT
 
 public:
     MainWindow(QWidget *parent = nullptr);
+
     ~MainWindow();
 
-    enum EditorStatus{
+    enum EditorStatus {
         Normal,
         Insert,
         Visual,
     };
+
     Q_ENUM(EditorStatus);
 
 private slots:
+
     void about_QianDeng_Lake();
+
     void openFile();
+
     void saveFile();
+
     void thanks();
+
     void newFile();
+
     void changLog();
 
 private:
@@ -49,6 +58,8 @@ private:
     unsigned long long filePathArrayPointer;
 
     void setEditorFont();
+
     QString setEditorStatus(EditorStatus p);
 };
+
 #endif // MAINWINDOW_H

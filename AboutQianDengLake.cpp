@@ -2,9 +2,8 @@
 #include "ui_AboutQianDengLake.h"
 
 AboutQianDengLake::AboutQianDengLake(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::AboutQianDengLake)
-{
+        QWidget(parent),
+        ui(new Ui::AboutQianDengLake) {
     ui->setupUi(this);
     QFile file(":/Project Info/LICENSE");
     file.open(QIODevice::ReadOnly);
@@ -12,11 +11,10 @@ AboutQianDengLake::AboutQianDengLake(QWidget *parent) :
     ui->plainTextEdit->setPlainText(value);
     ui->plainTextEdit->setReadOnly(true);
     setWindowTitle("About QianDeng Lake");
-    setMaximumSize(500,400);
-    setMinimumSize(500,400);
+    setMaximumSize(500, 400);
+    setMinimumSize(500, 400);
 }
 
-AboutQianDengLake::~AboutQianDengLake()
-{
+AboutQianDengLake::~AboutQianDengLake() {
     delete ui;
 }
