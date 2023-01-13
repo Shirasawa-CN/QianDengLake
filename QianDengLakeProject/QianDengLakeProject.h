@@ -5,8 +5,8 @@
 #include <QFile>
 #include <string>
 #include <vector>
+//#include <format>
 
-///Version 0.0.1
 class QianDengLakeProject {
 public:
     ///读取项目配置文件信息

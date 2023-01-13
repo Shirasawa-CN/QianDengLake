@@ -6,7 +6,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
@@ -16,16 +16,27 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 
 set(TS_FILES QianDengLake_zh_CN.ts)
+
 set(ABOUT_QIANDENG_LAKE AboutQianDengLake.h AboutQianDengLake.cpp AboutQianDengLake.ui)
+
 set(ICONS Icons/Icons.qrc)
+
 set(INFO Info.qrc)
+
 set(THANKS thanks.h thanks.cpp thanks.ui)
+
 set(CHANGLOG changlog.h changlog.cpp changlog.ui)
+
 set(QIANDENGLAKEPROJECT
         QianDengLakeProject/QianDengLakeProject.h
         QianDengLakeProject/QianDengLakeProject.cpp
         QianDengLakeProject/QianDengConfig.h
         QianDengLakeProject/QianDengConfig.cpp)
+
+set(QIANDENGLAKECONFIGSET Preferences/qiandenglakeconfigset.h
+    Preferences/qiandenglakeconfigset.cpp
+    Preferences/qiandenglakeconfigset.ui)
+
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
@@ -38,7 +49,8 @@ set(PROJECT_SOURCES
         ${ICONS}
         ${THANKS}
         ${CHANGLOG}
-        ${QIANDENGLAKEPROJECT})
+        ${QIANDENGLAKEPROJECT}
+        ${QIANDENGLAKECONFIGSET})
 
 if (${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(QianDengLake

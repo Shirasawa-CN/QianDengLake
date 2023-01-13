@@ -4,6 +4,7 @@
 #include "thanks.h"
 #include "changlog.h"
 #include "QianDengLakeProject/QianDengLakeProject.h"
+#include "Preferences/qiandenglakeconfigset.h"
 
 MainWindow::MainWindow(QWidget *parent)
         : QMainWindow(parent), ui(new Ui::MainWindow) {
@@ -11,15 +12,15 @@ MainWindow::MainWindow(QWidget *parent)
     setWindowTitle("QianDeng Lake");
     setCentralWidget(ui->textEdit);
 
+    //check config
+    QFile config;
+    //if()
+
     //set textEditor_font
     textEditor_font = ui->textEdit->font();
     textEditor_font.setPointSize(14);
     textEditor_font.setFamily("Fira Code");
     ui->textEdit->setFont(textEditor_font);
-
-    //set statusBar
-    QLabel *statusLabel = new QLabel(setEditorStatus(EditorStatus::Normal), this);
-    ui->statusbar->addWidget(statusLabel);
 
     //connect
     connect(ui->actionNew_File, &QAction::triggered, this, &MainWindow::newFile);
@@ -29,18 +30,11 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->actionAbout_QianDeng_Lake, &QAction::triggered, this, &MainWindow::about_QianDeng_Lake);
     connect(ui->actionThanks, &QAction::triggered, this, &MainWindow::thanks);
     connect(ui->actionChange_Log, &QAction::triggered, this, &MainWindow::changLog);
+    connect(ui->actionPreferences,&QAction::triggered,this,&MainWindow::qianDengLakeConfigSet);
 }
 
 MainWindow::~MainWindow() {
     delete ui;
-}
-
-void MainWindow::setEditorFont() {
-    bool ok;
-    textEditor_font = QFontDialog::getFont(&ok, textEditor_font);
-    if (ok) {
-        ui->textEdit->setFont(textEditor_font);
-    }
 }
 
 void MainWindow::about_QianDeng_Lake() {
@@ -100,4 +94,12 @@ void MainWindow::newFile() {
 void MainWindow::changLog() {
     ChangLog *p = new ChangLog;
     p->show();
+}
+
+void MainWindow::qianDengLakeConfigSet() {
+    QianDengLakeConfigSet *p = new QianDengLakeConfigSet;
+    p->show();
+}
+
+void MainWindow::loadPreferences(){
 }

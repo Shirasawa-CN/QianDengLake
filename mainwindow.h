@@ -50,6 +50,10 @@ private slots:
 
     void changLog();
 
+    void qianDengLakeConfigSet();
+
+    void loadPreferences();
+
 private:
     Ui::MainWindow *ui;
     QFont textEditor_font;
