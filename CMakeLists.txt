@@ -33,9 +33,16 @@ set(QIANDENGLAKEPROJECT
         QianDengLakeProject/QianDengConfig.h
         QianDengLakeProject/QianDengConfig.cpp)
 
-set(QIANDENGLAKECONFIGSET Preferences/qiandenglakeconfigset.h
+set(QIANDENGLAKECONFIGSET
+    Preferences/qiandenglakeconfigset.h
     Preferences/qiandenglakeconfigset.cpp
-    Preferences/qiandenglakeconfigset.ui)
+    Preferences/qiandenglakeconfigset.ui
+    Preferences/editor.h
+    Preferences/editor.cpp
+    Preferences/editor.ui
+    Preferences/enviroment.h
+    Preferences/enviroment.cpp
+    Preferences/enviroment.ui)
 
 set(PROJECT_SOURCES
         main.cpp

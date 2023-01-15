@@ -1,6 +1,8 @@
 #ifndef QIANDENGLAKECONFIGSET_H
 #define QIANDENGLAKECONFIGSET_H
 
+#include "editor.h"
+#include "enviroment.h"
 #include <QWidget>
 #include <QMessageBox>
 #include <QString>
@@ -17,12 +19,20 @@ class QianDengLakeConfigSet : public QWidget
 public:
     explicit QianDengLakeConfigSet(QWidget *parent = nullptr);
     ~QianDengLakeConfigSet();
+    struct preferencesInfo{
+        QFont font;
+    }preferencesInfo;
 
 private:
     Ui::QianDengLakeConfigSet *ui;
-    bool ok = true;
-    QFont font;
+
+    void hideAllWidget();
+    Editor *p_Editor = new Editor;
+    Enviroment *p_Enviroment = new Enviroment;
+
+    void editorSetSlot();
+    void enviromentSetSlot();
 private slots:
-    void getFontSlot();
+
 };
 #endif // QIANDENGLAKECONFIGSET_H
