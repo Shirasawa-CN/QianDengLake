@@ -28,25 +28,11 @@ public:
 
     ~MainWindow();
 
-    enum EditorStatus {
-        Normal,
-        Insert,
-        Visual,
-    };
-
-    Q_ENUM(EditorStatus);
-
 private slots:
 
     void about_QianDeng_Lake();
 
-    void openFile();
-
-    void saveFile();
-
     void thanks();
-
-    void newFile();
 
     void changLog();
 
@@ -62,8 +48,6 @@ private:
     unsigned long long filePathArrayPointer;
 
     void setEditorFont();
-
-    QString setEditorStatus(EditorStatus p);
 };
 
 #endif // MAINWINDOW_H

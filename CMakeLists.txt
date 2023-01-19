@@ -9,11 +9,13 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup()
+#include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+#conan_basic_setup()
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
+
+link_libraries("/usr/lib/libqscintilla2_qt6.so")
 
 set(TS_FILES QianDengLake_zh_CN.ts)
 
@@ -32,6 +34,8 @@ set(QIANDENGLAKEPROJECT
         QianDengLakeProject/QianDengLakeProject.cpp
         QianDengLakeProject/QianDengConfig.h
         QianDengLakeProject/QianDengConfig.cpp)
+
+set(NOTEPAD notepad/filemanager.h notepad/filemanager.cpp notepad/notepad.h notepad/notepad.cpp notepad/notepad.ui)
 
 set(QIANDENGLAKECONFIGSET
     Preferences/qiandenglakeconfigset.h
@@ -57,7 +61,8 @@ set(PROJECT_SOURCES
         ${THANKS}
         ${CHANGLOG}
         ${QIANDENGLAKEPROJECT}
-        ${QIANDENGLAKECONFIGSET})
+        ${QIANDENGLAKECONFIGSET}
+        ${NOTEPAD})
 
 if (${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(QianDengLake
