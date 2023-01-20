@@ -43,9 +43,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QFont textEditor_font;
-    QString filePath;
-    std::vector<QString> filePathArray;
-    unsigned long long filePathArrayPointer;
 
     void setEditorFont();
 };

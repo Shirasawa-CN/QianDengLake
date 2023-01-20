@@ -15,8 +15,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 
-link_libraries("/usr/lib/libqscintilla2_qt6.so")
-
 set(TS_FILES QianDengLake_zh_CN.ts)
 
 set(ABOUT_QIANDENG_LAKE AboutQianDengLake.h AboutQianDengLake.cpp AboutQianDengLake.ui)
@@ -48,6 +46,8 @@ set(QIANDENGLAKECONFIGSET
     Preferences/enviroment.cpp
     Preferences/enviroment.ui)
 
+set(QIANDENGLAKE_RESOURCES resources/resources.qrc)
+
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
@@ -62,7 +62,8 @@ set(PROJECT_SOURCES
         ${CHANGLOG}
         ${QIANDENGLAKEPROJECT}
         ${QIANDENGLAKECONFIGSET}
-        ${NOTEPAD})
+        ${NOTEPAD}
+        ${QIANDENGLAKE_RESOURCES})
 
 if (${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(QianDengLake
@@ -91,7 +92,7 @@ else ()
     qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 endif ()
 
-target_link_libraries(QianDengLake PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(QianDengLake PRIVATE Qt${QT_VERSION_MAJOR}::Widgets PUBLIC libqscintilla2_qt6.so)
 
 set_target_properties(QianDengLake PROPERTIES
         MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com

@@ -14,7 +14,10 @@ MainWindow::MainWindow(QWidget *parent)
     setCentralWidget(ui->centralwidget);
 
     ui->editorTabWidget->setTabsClosable(true);
-    ui->editorTabWidget->addTab(new notepad(),"new");
+    notepad *defualt_editor = new notepad;
+    defualt_editor->load_lexer(Language::Cpp);
+    ui->editorTabWidget->addTab(defualt_editor,"new");
+    ui->editorTabWidget->setMovable(true);
 
     //check config
     QFile config;

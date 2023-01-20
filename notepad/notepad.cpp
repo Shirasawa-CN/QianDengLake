@@ -18,6 +18,21 @@ notepad::notepad(QWidget *parent) :
   ui->textEdit->setMarginWidth(1, 20);
   // 编辑器放大
   ui->textEdit->zoomIn(8);
+  // 设置字体
+}
+
+void notepad::load_lexer(Language whichLanguage){
+  switch (whichLanguage){
+    case Language::Cpp:
+      QsciLexerCPP *lexer = new QsciLexerCPP;
+      ui->textEdit->setLexer(lexer);
+      apis = new QsciAPIs(lexer);
+      apis->load(":/Cpp.txt");
+      apis->prepare();
+      ui->textEdit->setAutoCompletionSource(QsciScintilla::AcsAll);
+      ui->textEdit->setAutoCompletionThreshold(1);
+      break;
+  }
 }
 
 notepad::~notepad()
