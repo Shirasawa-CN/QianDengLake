@@ -32,6 +32,12 @@ void notepad::load_lexer(Language whichLanguage){
       ui->textEdit->setAutoCompletionSource(QsciScintilla::AcsAll);
       ui->textEdit->setAutoCompletionThreshold(1);
       break;
+    /*
+    case Language::ASM:
+      break;
+    case Language::Rust:
+      break;
+      */
   }
 }
 
