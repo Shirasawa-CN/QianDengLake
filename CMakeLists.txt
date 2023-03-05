@@ -48,6 +48,8 @@ set(QIANDENGLAKECONFIGSET
 
 set(QIANDENGLAKE_RESOURCES resources/resources.qrc)
 
+set(QIANDENGLAKE_LEXER lexer/lexerRust.h)
+
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
@@ -63,7 +65,8 @@ set(PROJECT_SOURCES
         ${QIANDENGLAKEPROJECT}
         ${QIANDENGLAKECONFIGSET}
         ${NOTEPAD}
-        ${QIANDENGLAKE_RESOURCES})
+        ${QIANDENGLAKE_RESOURCES}
+        ${QIANDENGLAKE_LEXER})
 
 if (${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(QianDengLake
@@ -92,7 +95,10 @@ else ()
     qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 endif ()
 
-target_link_libraries(QianDengLake PRIVATE Qt${QT_VERSION_MAJOR}::Widgets PUBLIC libqscintilla2_qt6.so)
+#linux
+#target_link_libraries(QianDengLake PRIVATE Qt${QT_VERSION_MAJOR}::Widgets PUBLIC libqscintilla2_qt6.so)
+#windows
+target_link_libraries(QianDengLake PRIVATE Qt${QT_VERSION_MAJOR}::Widgets PUBLIC C:/Qt/6.4.2/mingw_64/bin/qscintilla2_qt6.dll)
 
 set_target_properties(QianDengLake PROPERTIES
         MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com

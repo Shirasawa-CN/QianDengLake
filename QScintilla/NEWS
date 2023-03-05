@@ -1,3 +1,7 @@
+v2.13.4 6th December 2022
+  - Added the .api files for Python v3.10 and v3.11.
+  - Bug fixes.
+
 v2.13.3 25th April 2022
   - Bug fixes.
 

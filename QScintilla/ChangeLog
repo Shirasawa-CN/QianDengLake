@@ -1,3 +1,32 @@
+2022-12-06  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, src/EditView.cxx:
+	Fixed horizontally scrolled text overwriting margins when EOLs are
+	visible.
+	[b2c87a81f0c3] [2.13.4] <2.13-maint>
+
+2022-06-17  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, qsci/api/python/Python-3.11.api:
+	Added the .api file for Python v3.11.
+	[96eca4a41bcb] <2.13-maint>
+
+2022-05-24  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, lib/gen_python3_api.py, lib/gen_python_api.py,
+	qsci/api/python/Python-3.10.api, qsci/api/python/Python-3.8.api,
+	qsci/api/python/Python-3.9.api:
+	Added the .api file for Python v3.10. Removed the script that
+	generates .api files for Python v2. Updated the .api file for Python
+	v3.8 and v3.9 removing non-stdlib stuff.
+	[048961f449ea] <2.13-maint>
+
+2022-05-13  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 2.13.3 for changeset 5b8465ba3664
+	[f37eea15e210] <2.13-maint>
+
 2022-04-25  Phil Thompson  <phil@riverbankcomputing.com>
 
 	* NEWS, qt/InputMethod.cpp:
